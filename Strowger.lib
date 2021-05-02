@@ -177,11 +177,11 @@ X ~ e 150 200 100 D 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# relay-single-coil
+# relay-single-winding
 #
-DEF relay-single-coil XX 0 40 Y Y 1 F N
+DEF relay-single-winding XX 0 40 Y Y 1 F N
 F0 "XX" 275 75 50 H V C CNN
-F1 "relay-single-coil" 375 175 50 H I C CNN
+F1 "relay-single-winding" 375 175 50 H I C CNN
 F2 "" 350 -200 50 H I C CNN
 F3 "" 350 -200 50 H I C CNN
 F4 "R1" 0 25 50 H V C CNN "Coil1"
@@ -194,11 +194,11 @@ X ~ e 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# relay-single-coil-highspeed
+# relay-single-winding-highspeed
 #
-DEF relay-single-coil-highspeed XX 0 40 Y Y 1 F N
+DEF relay-single-winding-highspeed XX 0 40 Y Y 1 F N
 F0 "XX" 425 75 50 H V C CNN
-F1 "relay-single-coil-highspeed" 375 175 50 H I C CNN
+F1 "relay-single-winding-highspeed" 375 175 50 H I C CNN
 F2 "" 350 -200 50 H I C CNN
 F3 "" 350 -200 50 H I C CNN
 F4 "R1" 0 25 50 H V C CNN "Coil1"
@@ -213,11 +213,11 @@ X ~ 3 0 200 100 D 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# relay-single-coil-ni-sleeve
+# relay-single-winding-ni-sleeve
 #
-DEF relay-single-coil-ni-sleeve XX 0 40 Y Y 1 F N
+DEF relay-single-winding-ni-sleeve XX 0 40 Y Y 1 F N
 F0 "XX" 275 75 50 H V C CNN
-F1 "relay-single-coil-ni-sleeve" 375 175 50 H I C CNN
+F1 "relay-single-winding-ni-sleeve" 375 175 50 H I C CNN
 F2 "" 350 -200 50 H I C CNN
 F3 "" 350 -200 50 H I C CNN
 F4 "R1" 0 25 50 H V C CNN "Coil1"
@@ -234,11 +234,11 @@ X ~ e 0 -200 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# relay-single-coil-polarised
+# relay-single-winding-polarised
 #
-DEF relay-single-coil-polarised XX 0 40 Y Y 1 F N
+DEF relay-single-winding-polarised XX 0 40 Y Y 1 F N
 F0 "XX" 425 75 50 H V C CNN
-F1 "relay-single-coil-polarised" 375 175 50 H I C CNN
+F1 "relay-single-winding-polarised" 375 175 50 H I C CNN
 F2 "" 350 -200 50 H I C CNN
 F3 "" 350 -200 50 H I C CNN
 F4 "R1" 0 25 50 H V C CNN "Coil1"
@@ -253,11 +253,11 @@ X ~ 3 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# relay-single-coil-slug-armature
+# relay-single-winding-slug-armature
 #
-DEF relay-single-coil-slug-armature XX 0 40 Y Y 1 F N
+DEF relay-single-winding-slug-armature XX 0 40 Y Y 1 F N
 F0 "XX" 425 75 50 H V C CNN
-F1 "relay-single-coil-slug-armature" 375 175 50 H I C CNN
+F1 "relay-single-winding-slug-armature" 375 175 50 H I C CNN
 F2 "" 350 -200 50 H I C CNN
 F3 "" 350 -200 50 H I C CNN
 F4 "R1" 0 25 50 H V C CNN "Coil1"
@@ -273,11 +273,11 @@ X ~ e 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# relay-single-coil-slug-heel
+# relay-single-winding-slug-heel
 #
-DEF relay-single-coil-slug-heel XX 0 40 Y Y 1 F N
+DEF relay-single-winding-slug-heel XX 0 40 Y Y 1 F N
 F0 "XX" 425 75 50 H V C CNN
-F1 "relay-single-coil-slug-heel" 375 175 50 H I C CNN
+F1 "relay-single-winding-slug-heel" 375 175 50 H I C CNN
 F2 "" 350 -200 50 H I C CNN
 F3 "" 350 -200 50 H I C CNN
 F4 "R1" 0 25 50 H V C CNN "Coil1"
