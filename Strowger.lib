@@ -33,6 +33,21 @@ X ~ ~ 200 -150 100 L 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
+# N-make
+#
+DEF N-make U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "N-make" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 0 -125 -75 -175 0 1 0 N
+P 4 0 1 0 50 -150 100 -125 100 -175 50 -150 N
+X ~ ~ -175 -150 100 R 50 50 1 1 U
+X ~ ~ 200 -150 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 # VMB
 #
 DEF VMB U 0 40 Y Y 1 F N
@@ -185,6 +200,50 @@ X ~ ~ 300 -150 100 L 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
+# indicator-dollseye
+#
+DEF indicator-dollseye XX 0 40 Y Y 1 F N
+F0 "XX" -275 75 50 H V C CNN
+F1 "indicator-dollseye" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" -275 -25 50 H V C CNN "Contacts"
+DRAW
+C 325 25 71 0 0 0 f
+S -200 100 200 -50 0 1 0 N
+P 2 0 0 0 260 10 390 10 N
+P 2 0 0 0 260 40 390 40 N
+P 2 0 1 0 -300 25 -250 25 N
+X ~ a 0 200 100 D 50 50 1 1 U
+X ~ b 0 -150 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# indicator-dropflap
+#
+DEF indicator-dropflap XX 0 40 Y Y 1 F N
+F0 "XX" 375 75 50 H V C CNN
+F1 "indicator-dropflap" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 375 -25 50 H V C CNN "Contacts"
+DRAW
+C -250 150 22 0 0 0 N
+C 230 -40 10 0 0 0 N
+S -200 100 200 -50 0 1 0 N
+P 2 0 0 0 -260 125 -260 -50 N
+P 2 0 0 0 -225 150 200 150 N
+P 2 0 0 0 230 100 230 -30 N
+P 3 0 0 0 -260 -50 -240 -50 -240 130 N
+P 3 0 0 0 200 150 260 150 260 90 N
+P 2 0 1 0 350 25 400 25 N
+X ~ a -150 -150 100 U 50 50 1 1 U
+X ~ e 150 -150 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 # interruptor-toggle
 #
 DEF interruptor-toggle U 0 40 Y Y 1 F N
@@ -203,65 +262,249 @@ X ~ ~ 225 -150 100 L 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
+# meter
+#
+DEF meter XX 0 40 Y Y 1 F N
+F0 "XX" -275 75 50 H V C CNN
+F1 "meter" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" -275 -25 50 H V C CNN "Contacts"
+DRAW
+C 260 -20 20 0 0 0 N
+C 355 70 35 0 0 0 N
+S -200 100 200 -50 0 1 0 N
+P 2 0 0 0 310 120 260 0 N
+P 2 0 0 0 330 100 310 120 N
+P 2 0 1 0 -300 25 -250 25 N
+X ~ a 0 200 100 D 50 50 1 1 U
+X ~ e 0 -150 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# relay-four-windings
+#
+DEF relay-four-windings XX 0 40 Y Y 1 F N
+F0 "XX" 675 75 50 H V C CNN
+F1 "relay-four-windings" 375 300 50 H I C CNN
+F2 "" 200 -200 50 H I C CNN
+F3 "" 200 -200 50 H I C CNN
+F4 "R1" -450 25 50 H V C CNN "Coil1"
+F5 "0" 675 -25 50 H V C CNN "Contacts"
+F6 "R2" -150 25 50 H V C CNN "Coil2"
+F7 "R3" 125 25 50 H V C CNN "Coli3"
+F8 "R4" 450 25 50 H V C CNN "Coil4"
+DRAW
+S -600 100 300 -50 0 0 0 N
+S 300 100 600 -50 0 0 0 N
+P 2 0 0 0 -300 100 -300 -50 N
+P 2 0 0 0 -250 100 -250 100 N
+P 2 0 0 0 0 100 0 -50 N
+P 3 0 0 0 -450 150 -150 150 -150 100 N
+P 3 0 0 0 -150 150 150 150 150 100 N
+P 3 0 0 0 150 150 450 150 450 100 N
+P 2 0 1 0 650 25 700 25 N
+X ~ a -450 -150 100 U 50 50 1 1 I
+X ~ b -150 -150 100 U 50 50 1 1 I
+X ~ c 150 -150 100 U 50 50 1 1 I
+X ~ d 450 -150 100 U 50 50 1 1 I
+X ~ e -450 200 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-four-windings-polarised
+#
+DEF relay-four-windings-polarised XX 0 40 Y Y 1 F N
+F0 "XX" 975 75 50 H V C CNN
+F1 "relay-four-windings-polarised" 375 300 50 H I C CNN
+F2 "" 200 -200 50 H I C CNN
+F3 "" 200 -200 50 H I C CNN
+F4 "R1" -450 25 50 H V C CNN "Coil1"
+F5 "0" 975 -25 50 H V C CNN "Contacts"
+F6 "R2" -150 25 50 H V C CNN "Coil2"
+F7 "R3" 125 25 50 H V C CNN "Coli3"
+F8 "R4" 450 25 50 H V C CNN "Coil4"
+DRAW
+T 0 675 25 50 0 0 0 P Normal 0 C C
+S -600 100 300 -50 0 0 0 N
+S 300 100 600 -50 0 0 0 N
+S 600 100 750 -50 0 0 0 N
+P 2 0 0 0 -300 100 -300 -50 N
+P 2 0 0 0 -250 100 -250 100 N
+P 2 0 0 0 0 100 0 -50 N
+P 2 0 1 0 950 25 1000 25 N
+X ~ 1 -450 -150 100 U 50 50 1 1 I
+X ~ 2 450 -150 100 U 50 50 1 1 I
+X ~ 3 -450 200 100 D 50 50 1 1 I
+X ~ 4 -150 -150 100 U 50 50 1 1 I
+X ~ 5 450 200 100 D 50 50 1 1 I
+X ~ 6 -150 200 100 D 50 50 1 1 I
+X ~ 7 150 -150 100 U 50 50 1 1 I
+X ~ 9 150 200 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-latching
+#
+DEF relay-latching XXR 0 40 Y Y 1 F N
+F0 "XXR" -625 75 50 H V C CNN
+F1 "relay-latching" 75 175 50 H I C CNN
+F2 "" 800 0 50 H I C CNN
+F3 "" 800 0 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" -625 -25 50 H V C CNN "Contacts"
+F6 "R2" 250 25 50 H V C CNN "Coli2"
+F7 "XXL" 550 75 50 H V C CNN "Reference1"
+F8 "0" 550 -25 50 H V C CNN "Contacts1"
+DRAW
+S -500 100 -100 -50 0 1 0 N
+S 50 100 450 -50 1 1 0 N
+P 2 0 0 0 -100 -50 50 100 N
+P 2 0 0 0 -100 100 50 -50 N
+P 2 0 0 0 525 25 575 25 N
+P 2 0 1 0 -650 25 -600 25 N
+X ~ a -300 200 100 D 50 50 1 1 U
+X ~ a 250 200 100 D 50 50 1 1 U
+X ~ e -300 -150 100 U 50 50 1 1 U
+X ~ e 250 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-shunt-field
+#
+DEF relay-shunt-field XX 0 40 Y Y 1 F N
+F0 "XX" 325 -25 50 H V C CNN
+F1 "relay-shunt-field" 375 175 50 H I C CNN
+F2 "" 250 -200 50 H I C CNN
+F3 "" 250 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 325 -125 50 H V C CNN "Contacts"
+F6 "R2" 0 -175 50 H V C CNN "Coli2"
+DRAW
+S -200 100 200 -50 0 1 0 N
+S -200 -100 200 -250 1 1 0 N
+P 4 0 0 0 -200 50 -250 50 -250 -200 -200 -200 N
+P 4 0 0 0 200 -200 250 -200 250 50 200 50 N
+P 2 0 1 0 300 -75 350 -75 N
+X ~ a -150 200 100 D 50 50 1 1 U
+X ~ b -150 -350 100 U 50 50 1 1 U
+X ~ d 150 -350 100 U 50 50 1 1 I
+X ~ e 150 200 100 D 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 # relay-single-coil
 #
-DEF relay-single-coil X 0 40 Y Y 1 F N
-F0 "X" 0 0 50 H V C CNN
-F1 "relay-single-coil" 650 -250 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF relay-single-coil XX 0 40 Y Y 1 F N
+F0 "XX" 275 75 50 H V C CNN
+F1 "relay-single-coil" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 275 -25 50 H V C CNN "Contacts"
 DRAW
-S -300 -200 300 -350 0 1 0 N
-X ~ a 0 -100 100 D 50 50 1 1 U
-X ~ e 0 -450 100 U 50 50 1 1 U
+S -200 100 200 -50 0 1 0 N
+P 2 0 1 0 250 25 300 25 N
+X ~ a 0 200 100 D 50 50 1 1 U
+X ~ e 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
 # relay-single-coil-highspeed
 #
-DEF relay-single-coil-highspeed X 0 40 Y Y 1 F N
-F0 "X" 0 0 50 H V C CNN
-F1 "relay-single-coil-highspeed" 650 -250 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF relay-single-coil-highspeed XX 0 40 Y Y 1 F N
+F0 "XX" 425 75 50 H V C CNN
+F1 "relay-single-coil-highspeed" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 425 -25 50 H V C CNN "Contacts"
 DRAW
-S -300 -200 300 -350 0 1 0 N
-S 300 -200 450 -350 0 1 0 N
-P 2 0 1 0 300 -275 450 -275 N
-X ~ a 0 -100 100 D 50 50 1 1 U
-X ~ e 0 -450 100 U 50 50 1 1 U
+S -200 100 200 -50 0 1 0 N
+S 200 100 350 -50 0 1 0 N
+P 2 0 1 0 350 25 200 25 N
+P 2 0 1 0 400 25 450 25 N
+X ~ a 0 200 100 D 50 50 1 1 U
+X ~ e 0 -150 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# relay-single-coil-ni-sleeve
+#
+DEF relay-single-coil-ni-sleeve XX 0 40 Y Y 1 F N
+F0 "XX" 275 75 50 H V C CNN
+F1 "relay-single-coil-ni-sleeve" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 275 -25 50 H V C CNN "Contacts"
+DRAW
+S -200 100 200 -50 0 1 0 N
+P 2 0 0 0 -200 -75 200 -75 N
+P 2 0 0 0 -200 125 200 125 N
+P 2 0 0 0 0 -75 0 -100 N
+P 2 0 0 0 0 150 0 125 N
+P 2 0 1 0 250 25 300 25 N
+X ~ a 0 250 100 D 50 50 1 1 U
+X ~ e 0 -200 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# relay-single-coil-polarised
+#
+DEF relay-single-coil-polarised XX 0 40 Y Y 1 F N
+F0 "XX" 425 75 50 H V C CNN
+F1 "relay-single-coil-polarised" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 425 -25 50 H V C CNN "Contacts"
+DRAW
+T 0 275 25 50 0 0 0 P Normal 0 C C
+S -200 100 200 -50 0 1 0 N
+S 200 100 350 -50 0 1 0 N
+P 2 0 1 0 400 25 450 25 N
+X ~ 2 0 200 100 D 50 50 1 1 U
+X ~ 3 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
 # relay-single-coil-slug-armature
 #
-DEF relay-single-coil-slug-armature X 0 40 Y Y 1 F N
-F0 "X" 0 0 50 H V C CNN
-F1 "relay-single-coil-slug-armature" 650 -250 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF relay-single-coil-slug-armature XX 0 40 Y Y 1 F N
+F0 "XX" 425 75 50 H V C CNN
+F1 "relay-single-coil-slug-armature" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 425 -25 50 H V C CNN "Contacts"
 DRAW
-S -300 -200 300 -350 0 1 0 N
-S 300 -200 450 -350 0 1 0 N
-P 2 0 1 0 300 -350 450 -200 N
-P 2 0 1 0 300 -200 450 -350 N
-X ~ a 0 -100 100 D 50 50 1 1 U
-X ~ e 0 -450 100 U 50 50 1 1 U
+S -200 100 200 -50 0 1 0 N
+S 200 100 350 -50 0 1 0 N
+P 2 0 1 0 350 -50 200 100 N
+P 2 0 1 0 350 100 200 -50 N
+P 2 0 1 0 400 25 450 25 N
+X ~ a 0 200 100 D 50 50 1 1 U
+X ~ e 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
 # relay-single-coil-slug-heel
 #
-DEF relay-single-coil-slug-heel X 0 40 Y Y 1 F N
-F0 "X" 0 0 50 H V C CNN
-F1 "relay-single-coil-slug-heel" 650 -250 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF relay-single-coil-slug-heel XX 0 40 Y Y 1 F N
+F0 "XX" 425 75 50 H V C CNN
+F1 "relay-single-coil-slug-heel" 375 175 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" 0 25 50 H V C CNN "Coil1"
+F5 "0" 425 -25 50 H V C CNN "Contacts"
 DRAW
-S -300 -200 300 -350 0 1 0 N
-S 300 -200 450 -350 0 1 0 F
-X ~ a 0 -100 100 D 50 50 1 1 U
-X ~ e 0 -450 100 U 50 50 1 1 U
+S -200 100 200 -50 0 1 0 N
+S 200 100 350 -50 0 1 0 F
+P 2 0 1 0 400 25 450 25 N
+X ~ a 0 200 100 D 50 50 1 1 U
+X ~ e 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
@@ -272,6 +515,9 @@ F0 "X" 0 0 50 H V C CNN
 F1 "relay-three-coil" 650 -250 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "R1" -200 -275 50 H V C CNN "Coil1"
+F5 "R2" 0 -275 50 H V C CNN "Coil2"
+F6 "R3" 200 -275 50 H V C CNN "Coil3"
 DRAW
 S -300 -200 300 -350 0 1 0 N
 P 2 0 1 0 -100 -200 -100 -350 N
@@ -373,6 +619,250 @@ X ~ e 200 -450 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
+# relay-three-windings
+#
+DEF relay-three-windings XX 0 40 Y Y 1 F N
+F0 "XX" 525 75 50 H V C CNN
+F1 "relay-three-windings" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 525 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+S -450 100 450 -50 0 0 0 N
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 150 100 150 -50 N
+P 3 0 0 0 -300 150 0 150 0 100 N
+P 2 0 1 0 500 25 550 25 N
+X ~ a -300 -150 100 U 50 50 1 1 I
+X ~ b -300 200 100 D 50 50 1 1 I
+X ~ c 0 -150 100 U 50 50 1 1 I
+X ~ d 300 200 100 D 50 50 1 1 I
+X ~ e 300 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-three-windings-highspeed
+#
+DEF relay-three-windings-highspeed XX 0 40 Y Y 1 F N
+F0 "XX" 675 75 50 H V C CNN
+F1 "relay-three-windings-highspeed" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 675 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+S -450 100 450 -50 0 0 0 N
+S 450 100 600 -50 0 0 0 N
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 150 100 150 -50 N
+P 2 0 0 0 450 25 600 25 N
+P 3 0 0 0 -300 150 0 150 0 100 N
+P 2 0 1 0 650 25 700 25 N
+X ~ a -300 -150 100 U 50 50 1 1 I
+X ~ b -300 200 100 D 50 50 1 1 I
+X ~ c 0 -150 100 U 50 50 1 1 I
+X ~ d 300 200 100 D 50 50 1 1 I
+X ~ e 300 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-three-windings-ni-sleeve
+#
+DEF relay-three-windings-ni-sleeve XX 0 40 Y Y 1 F N
+F0 "XX" 525 75 50 H V C CNN
+F1 "relay-three-windings-ni-sleeve" 375 300 50 H I C CNN
+F2 "" 350 -250 50 H I C CNN
+F3 "" 350 -250 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 525 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+S -450 100 450 -50 0 0 0 N
+P 2 0 0 0 -450 -75 450 -75 N
+P 2 0 0 0 -450 125 450 125 N
+P 2 0 0 0 -300 -75 -300 -100 N
+P 2 0 0 0 -300 150 -300 125 N
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 0 -75 0 -100 N
+P 2 0 0 0 0 150 0 125 N
+P 2 0 0 0 150 100 150 -50 N
+P 2 0 0 0 300 -75 300 -100 N
+P 2 0 0 0 300 150 300 125 N
+P 3 0 0 0 -300 200 0 200 0 150 N
+P 2 0 1 0 500 25 550 25 N
+X ~ a -300 -200 100 U 50 50 1 1 I
+X ~ b -300 250 100 D 50 50 1 1 I
+X ~ c 0 -200 100 U 50 50 1 1 I
+X ~ d 300 250 100 D 50 50 1 1 I
+X ~ e 300 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-three-windings-ni-sleeve-slug-armature
+#
+DEF relay-three-windings-ni-sleeve-slug-armature XX 0 40 Y Y 1 F N
+F0 "XX" 675 75 50 H V C CNN
+F1 "relay-three-windings-ni-sleeve-slug-armature" 375 300 50 H I C CNN
+F2 "" 350 -250 50 H I C CNN
+F3 "" 350 -250 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 675 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+S -450 100 450 -50 0 0 0 N
+S 450 100 600 -50 0 0 0 N
+P 2 0 0 0 -450 -75 450 -75 N
+P 2 0 0 0 -450 125 450 125 N
+P 2 0 0 0 -300 -75 -300 -100 N
+P 2 0 0 0 -300 150 -300 125 N
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 0 -75 0 -100 N
+P 2 0 0 0 0 150 0 125 N
+P 2 0 0 0 150 100 150 -50 N
+P 2 0 0 0 300 -75 300 -100 N
+P 2 0 0 0 300 150 300 125 N
+P 2 0 0 0 600 -50 450 100 N
+P 2 0 0 0 600 100 450 -50 N
+P 3 0 0 0 -300 200 0 200 0 150 N
+P 2 0 1 0 650 25 700 25 N
+X ~ a -300 -200 100 U 50 50 1 1 I
+X ~ b -300 250 100 D 50 50 1 1 I
+X ~ c 0 -200 100 U 50 50 1 1 I
+X ~ d 300 250 100 D 50 50 1 1 I
+X ~ e 300 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-three-windings-ni-sleeve-slug-heel
+#
+DEF relay-three-windings-ni-sleeve-slug-heel XX 0 40 Y Y 1 F N
+F0 "XX" 675 75 50 H V C CNN
+F1 "relay-three-windings-ni-sleeve-slug-heel" 375 300 50 H I C CNN
+F2 "" 350 -250 50 H I C CNN
+F3 "" 350 -250 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 675 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+S -450 100 450 -50 0 0 0 N
+S 450 100 600 -50 0 0 0 F
+P 2 0 0 0 -450 -75 450 -75 N
+P 2 0 0 0 -450 125 450 125 N
+P 2 0 0 0 -300 -75 -300 -100 N
+P 2 0 0 0 -300 150 -300 125 N
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 0 -75 0 -100 N
+P 2 0 0 0 0 150 0 125 N
+P 2 0 0 0 150 100 150 -50 N
+P 2 0 0 0 300 -75 300 -100 N
+P 2 0 0 0 300 150 300 125 N
+P 3 0 0 0 -300 200 0 200 0 150 N
+P 2 0 1 0 650 25 700 25 N
+X ~ a -300 -200 100 U 50 50 1 1 I
+X ~ b -300 250 100 D 50 50 1 1 I
+X ~ c 0 -200 100 U 50 50 1 1 I
+X ~ d 300 250 100 D 50 50 1 1 I
+X ~ e 300 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-three-windings-polarised
+#
+DEF relay-three-windings-polarised XX 0 40 Y Y 1 F N
+F0 "XX" 675 75 50 H V C CNN
+F1 "relay-three-windings-polarised" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 675 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+T 0 525 25 50 0 0 0 P Normal 0 C C
+S -450 100 450 -50 0 0 0 N
+S 450 100 600 -50 0 0 0 N
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 150 100 150 -50 N
+P 3 0 0 0 -300 150 0 150 0 100 N
+P 2 0 1 0 650 25 700 25 N
+X ~ a -300 -150 100 U 50 50 1 1 I
+X ~ b -300 200 100 D 50 50 1 1 I
+X ~ c 0 -150 100 U 50 50 1 1 I
+X ~ d 300 200 100 D 50 50 1 1 I
+X ~ e 300 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-three-windings-slug-armature
+#
+DEF relay-three-windings-slug-armature XX 0 40 Y Y 1 F N
+F0 "XX" 675 75 50 H V C CNN
+F1 "relay-three-windings-slug-armature" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 675 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+S -450 100 450 -50 0 0 0 N
+S 450 100 600 -50 0 0 0 N
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 150 100 150 -50 N
+P 2 0 0 0 450 -50 600 100 N
+P 2 0 0 0 450 100 600 -50 N
+P 3 0 0 0 -300 150 0 150 0 100 N
+P 2 0 1 0 650 25 700 25 N
+X ~ a -300 -150 100 U 50 50 1 1 I
+X ~ b -300 200 100 D 50 50 1 1 I
+X ~ c 0 -150 100 U 50 50 1 1 I
+X ~ d 300 200 100 D 50 50 1 1 I
+X ~ e 300 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-three-windings-slug-heel
+#
+DEF relay-three-windings-slug-heel XX 0 40 Y Y 1 F N
+F0 "XX" 675 75 50 H V C CNN
+F1 "relay-three-windings-slug-heel" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -300 25 50 H V C CNN "Coil1"
+F5 "0" 675 -25 50 H V C CNN "Contacts"
+F6 "R2" 0 25 50 H V C CNN "Coil2"
+F7 "R3" 275 25 50 H V C CNN "Coli3"
+DRAW
+S -450 100 450 -50 0 0 0 N
+S 450 100 600 -50 0 0 0 F
+P 2 0 0 0 -150 100 -150 -50 N
+P 2 0 0 0 -100 100 -100 100 N
+P 2 0 0 0 150 100 150 -50 N
+P 3 0 0 0 -300 150 0 150 0 100 N
+P 2 0 1 0 650 25 700 25 N
+X ~ a -300 -150 100 U 50 50 1 1 I
+X ~ b -300 200 100 D 50 50 1 1 I
+X ~ c 0 -150 100 U 50 50 1 1 I
+X ~ d 300 200 100 D 50 50 1 1 I
+X ~ e 300 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # relay-two-coil
 #
 DEF relay-two-coil X 0 40 Y Y 1 F N
@@ -462,6 +952,146 @@ X ~ a -150 -100 100 D 50 50 1 1 U
 X ~ b -150 -450 100 U 50 50 1 1 U
 X ~ d 150 -100 100 D 50 50 1 1 U
 X ~ e 150 -450 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# relay-two-windings
+#
+DEF relay-two-windings XX 0 40 Y Y 1 F N
+F0 "XX" 375 75 50 H V C CNN
+F1 "relay-two-windings" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -150 25 50 H V C CNN "Coil1"
+F5 "0" 375 -25 50 H V C CNN "Contacts"
+F6 "R2" 150 25 50 H V C CNN "Coli2"
+DRAW
+S -300 100 300 -50 0 0 0 N
+P 2 0 0 0 0 100 0 -50 N
+P 2 0 1 0 350 25 400 25 N
+X ~ a -150 200 100 D 50 50 1 1 I
+X ~ b -150 -150 100 U 50 50 1 1 I
+X ~ d 150 200 100 D 50 50 1 1 I
+X ~ e 150 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-two-windings-highspeed
+#
+DEF relay-two-windings-highspeed XX 0 40 Y Y 1 F N
+F0 "XX" 525 75 50 H V C CNN
+F1 "relay-two-windings-highspeed" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -150 25 50 H V C CNN "Coil1"
+F5 "0" 525 -25 50 H V C CNN "Contacts"
+F6 "R2" 150 25 50 H V C CNN "Coli2"
+DRAW
+S -300 100 300 -50 0 0 0 N
+S 300 100 450 -50 0 0 0 N
+P 2 0 0 0 0 100 0 -50 N
+P 2 0 0 0 300 25 450 25 N
+P 2 0 1 0 500 25 550 25 N
+X ~ 1 -150 -150 100 U 50 50 1 1 I
+X ~ 3 -150 200 100 D 50 50 1 1 I
+X ~ 5 150 200 100 D 50 50 1 1 I
+X ~ 7 150 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-two-windings-ni-sleeve
+#
+DEF relay-two-windings-ni-sleeve XX 0 40 Y Y 1 F N
+F0 "XX" 375 75 50 H V C CNN
+F1 "relay-two-windings-ni-sleeve" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -150 25 50 H V C CNN "Coil1"
+F5 "0" 375 -25 50 H V C CNN "Contacts"
+F6 "R2" 150 25 50 H V C CNN "Coli2"
+DRAW
+S -300 100 300 -50 0 0 0 N
+P 2 0 0 0 -300 -75 300 -75 N
+P 2 0 0 0 -150 -75 -150 -100 N
+P 2 0 0 0 -150 150 -150 125 N
+P 2 0 0 0 0 100 0 -50 N
+P 2 0 0 0 150 -75 150 -100 N
+P 2 0 0 0 150 150 150 125 N
+P 2 0 0 0 300 125 -300 125 N
+P 2 0 1 0 350 25 400 25 N
+X ~ a -150 250 100 D 50 50 1 1 I
+X ~ b -150 -200 100 U 50 50 1 1 I
+X ~ d 150 250 100 D 50 50 1 1 I
+X ~ e 150 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-two-windings-polarised
+#
+DEF relay-two-windings-polarised XX 0 40 Y Y 1 F N
+F0 "XX" 525 75 50 H V C CNN
+F1 "relay-two-windings-polarised" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -150 25 50 H V C CNN "Coil1"
+F5 "0" 525 -25 50 H V C CNN "Contacts"
+F6 "R2" 150 25 50 H V C CNN "Coli2"
+DRAW
+T 0 375 25 50 0 0 0 P Normal 0 C C
+S -300 100 300 -50 0 0 0 N
+S 300 100 450 -50 0 0 0 N
+P 2 0 0 0 0 100 0 -50 N
+P 2 0 1 0 500 25 550 25 N
+X ~ 2 -150 200 100 D 50 50 1 1 I
+X ~ 3 -150 -150 100 U 50 50 1 1 I
+X ~ 5 150 200 100 D 50 50 1 1 I
+X ~ 7 150 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-two-windings-slug-armature
+#
+DEF relay-two-windings-slug-armature XX 0 40 Y Y 1 F N
+F0 "XX" 525 75 50 H V C CNN
+F1 "relay-two-windings-slug-armature" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -150 25 50 H V C CNN "Coil1"
+F5 "0" 525 -25 50 H V C CNN "Contacts"
+F6 "R2" 150 25 50 H V C CNN "Coli2"
+DRAW
+S -300 100 300 -50 0 0 0 N
+S 300 100 450 -50 0 0 0 N
+P 2 0 0 0 0 100 0 -50 N
+P 2 0 0 0 450 -50 300 100 N
+P 2 0 0 0 450 100 300 -50 N
+P 2 0 1 0 500 25 550 25 N
+X ~ a -150 200 100 D 50 50 1 1 I
+X ~ b -150 -150 100 U 50 50 1 1 I
+X ~ d 150 200 100 D 50 50 1 1 I
+X ~ e 150 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# relay-two-windings-slug-heel
+#
+DEF relay-two-windings-slug-heel XX 0 40 Y Y 1 F N
+F0 "XX" 525 75 50 H V C CNN
+F1 "relay-two-windings-slug-heel" 375 300 50 H I C CNN
+F2 "" 350 -200 50 H I C CNN
+F3 "" 350 -200 50 H I C CNN
+F4 "R1" -150 25 50 H V C CNN "Coil1"
+F5 "0" 525 -25 50 H V C CNN "Contacts"
+F6 "R2" 150 25 50 H V C CNN "Coli2"
+DRAW
+S -300 100 300 -50 0 0 0 N
+S 300 100 450 -50 0 0 0 F
+P 2 0 0 0 0 100 0 -50 N
+P 2 0 1 0 500 25 550 25 N
+X ~ a -150 200 100 D 50 50 1 1 I
+X ~ b -150 -150 100 U 50 50 1 1 I
+X ~ d 150 200 100 D 50 50 1 1 I
+X ~ e 150 -150 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
