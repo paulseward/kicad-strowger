@@ -1029,6 +1029,208 @@ X ~ e 150 -150 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# resistor
+#
+DEF resistor R 0 40 Y Y 1 F N
+F0 "R" 0 75 50 H V C CNN
+F1 "resistor" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "R" 0 -75 50 H V C CNN "Resistance"
+DRAW
+P 9 0 1 0 -90 0 -75 25 -50 -25 -25 25 0 -25 25 25 50 -25 75 25 90 0 N
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-ballast
+#
+DEF resistor-ballast R 0 40 Y Y 1 F N
+F0 "R" 0 75 50 H V C CNN
+F1 "resistor-ballast" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+A -100 0 71 1350 -1350 0 1 0 N -150 50 -150 -50
+A 100 0 71 -450 450 0 1 0 N 150 -50 150 50
+C 0 0 35 0 1 0 N
+C 115 -30 10 0 1 0 F
+P 2 0 1 0 -150 -50 150 -50 N
+P 2 0 1 0 -90 0 -190 0 N
+P 2 0 1 0 90 0 190 0 N
+P 2 0 1 0 150 50 -150 50 N
+P 4 0 1 0 -90 0 -75 25 -50 -25 -35 5 N
+P 4 0 1 0 35 5 50 -25 75 25 90 0 N
+X ~ a -250 0 59 R 50 50 1 1 P
+X ~ b 250 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-ballast-tapped-fillament
+#
+DEF resistor-ballast-tapped-fillament R 0 40 Y Y 1 F N
+F0 "R" 0 100 50 H V C CNN
+F1 "resistor-ballast-tapped-fillament" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+A -37 -47 149 1394 -1364 0 1 0 N -150 50 -145 -150
+A 42 -53 149 -406 436 0 1 0 N 155 -150 150 50
+C 0 0 35 0 1 0 N
+C 115 -50 10 0 1 0 F
+C 0 -100 35 1 1 0 N
+P 2 0 1 0 -145 -150 155 -150 N
+P 2 0 1 0 -90 0 -190 0 N
+P 2 0 1 0 90 0 150 0 N
+P 2 0 1 0 150 0 150 -100 N
+P 2 0 1 0 150 50 -150 50 N
+P 2 0 1 0 200 -50 150 -50 N
+P 4 0 1 0 -90 0 -75 25 -50 -25 -35 5 N
+P 4 0 1 0 35 5 50 -25 75 25 90 0 N
+P 2 1 1 0 -90 -100 -190 -100 N
+P 2 1 1 0 90 -100 150 -100 N
+P 4 1 1 0 -90 -100 -75 -75 -50 -125 -35 -95 N
+P 4 1 1 0 35 -95 50 -125 75 -75 90 -100 N
+X ~ 1 250 -50 59 L 50 50 1 1 P
+X ~ 3 -250 0 59 R 50 50 1 1 P
+X ~ 4 -250 -100 59 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-ballast-two-fillament
+#
+DEF resistor-ballast-two-fillament R 0 40 Y Y 1 F N
+F0 "R" 0 75 50 H V C CNN
+F1 "resistor-ballast-two-fillament" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+A -37 -47 149 1394 -1364 0 1 0 N -150 50 -145 -150
+A 42 -53 149 -406 436 0 1 0 N 155 -150 150 50
+C 0 0 35 0 1 0 N
+C 115 -50 10 0 1 0 F
+C 0 -100 35 1 1 0 N
+P 2 0 1 0 -145 -150 155 -150 N
+P 2 0 1 0 -90 0 -190 0 N
+P 2 0 1 0 90 0 190 0 N
+P 2 0 1 0 150 50 -150 50 N
+P 4 0 1 0 -90 0 -75 25 -50 -25 -35 5 N
+P 4 0 1 0 35 5 50 -25 75 25 90 0 N
+P 2 1 1 0 -90 -100 -190 -100 N
+P 2 1 1 0 90 -100 190 -100 N
+P 4 1 1 0 -90 -100 -75 -75 -50 -125 -35 -95 N
+P 4 1 1 0 35 -95 50 -125 75 -75 90 -100 N
+X ~ a -250 0 59 R 50 50 1 1 P
+X ~ b 250 0 59 L 50 50 1 1 P
+X ~ c -250 -100 59 R 50 50 1 1 P
+X ~ d 250 -100 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-bulb
+#
+DEF resistor-bulb RLP 0 40 Y Y 1 F N
+F0 "RLP" 0 150 50 H V C CNN
+F1 "resistor-bulb" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "R" 0 -75 50 H V C CNN "Resistance"
+DRAW
+C 0 0 105 0 1 0 N
+P 9 0 1 0 -90 0 -75 25 -50 -25 -25 25 0 -25 25 25 50 -25 75 25 90 0 N
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-nonreactive
+#
+DEF resistor-nonreactive R 0 40 Y Y 1 F N
+F0 "R" 0 75 50 H V C CNN
+F1 "resistor-nonreactive" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "R" 0 -75 50 H V C CNN "Resistance"
+DRAW
+P 2 0 1 0 -75 0 -95 0 N
+P 2 0 1 0 75 0 90 0 N
+P 14 0 1 0 -75 0 -75 25 -50 25 -50 -25 -25 -25 -25 25 0 25 0 -25 25 -25 25 25 50 25 50 -25 75 -25 75 0 N
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-preset-variable
+#
+DEF resistor-preset-variable R 0 40 Y Y 1 F N
+F0 "R" 105 -50 50 H V C CNN
+F1 "resistor-preset-variable" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "R" 0 65 50 H V C CNN "Resistance"
+DRAW
+S -10 -30 10 -40 0 1 0 F
+P 9 0 1 0 -90 0 -75 25 -50 -25 -25 25 0 -25 25 25 50 -25 75 25 90 0 N
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 150 0 59 L 50 50 1 1 P
+X ~ c 0 -100 59 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-thermistor
+#
+DEF resistor-thermistor R 0 40 Y Y 1 F N
+F0 "R" 0 75 50 H V C CNN
+F1 "resistor-thermistor" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+C 0 0 35 0 1 0 F
+P 9 0 1 0 -90 0 -75 25 -50 -25 -25 25 0 -25 25 25 50 -25 75 25 90 0 N
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-thermistor-indirectlyheated
+#
+DEF resistor-thermistor-indirectlyheated R 0 40 Y Y 1 F N
+F0 "R" 0 150 50 H V C CNN
+F1 "resistor-thermistor-indirectlyheated" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+A 0 -150 71 1350 450 0 1 0 N -50 -100 50 -100
+C 0 0 35 0 1 0 F
+C 0 0 112 0 1 0 N
+P 2 0 1 0 -50 -100 -50 -150 N
+P 2 0 1 0 50 -100 50 -150 N
+P 9 0 1 0 -90 0 -75 25 -50 -25 -25 25 0 -25 25 25 50 -25 75 25 90 0 N
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 150 0 59 L 50 50 1 1 P
+X ~ c -50 -200 59 U 50 50 1 1 P
+X ~ d 50 -200 59 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistor-variable
+#
+DEF resistor-variable R 0 40 Y Y 1 F N
+F0 "R" 105 -50 50 H V C CNN
+F1 "resistor-variable" 0 150 50 H I C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "R" 0 65 50 H V C CNN "Resistance"
+DRAW
+P 4 0 1 0 0 -25 -10 -40 10 -40 0 -25 F
+P 9 0 1 0 -90 0 -75 25 -50 -25 -25 25 0 -25 25 25 50 -25 75 25 90 0 N
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 150 0 59 L 50 50 1 1 P
+X ~ c 0 -100 59 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # transformer-dustcore
 #
 DEF transformer-dustcore TR 0 40 Y Y 1 F N
