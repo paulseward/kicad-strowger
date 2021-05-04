@@ -1,23 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Rectifier
-#
-DEF Rectifier MR 0 40 Y Y 1 F N
-F0 "MR" 0 -75 50 H V C CNN
-F1 "Rectifier" 0 125 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-T 0 50 -25 30 0 0 0 + Normal 0 C C
-P 2 0 1 0 -50 0 50 0 N
-P 2 0 1 0 25 25 25 -25 N
-P 3 0 1 0 -25 0 -25 25 25 0 F
-X ~ a -100 0 59 R 50 50 1 1 P
-X ~ b 100 0 59 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # capacitor
 #
 DEF capacitor C 0 40 Y Y 1 F N
@@ -476,6 +459,130 @@ X ~ e 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
+# rectifier
+#
+DEF rectifier MR 0 40 Y Y 1 F N
+F0 "MR" 0 -75 50 H V C CNN
+F1 "rectifier" 0 125 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 50 -25 30 0 0 0 + Normal 0 C C
+P 2 0 1 0 -50 0 50 0 N
+P 2 0 1 0 25 25 25 -25 N
+P 3 0 1 0 -25 0 -25 25 25 0 F
+X ~ a -100 0 59 R 50 50 1 1 P
+X ~ b 100 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rectifier-bridge-1
+#
+DEF rectifier-bridge-1 MR 0 40 Y Y 1 F N
+F0 "MR" 100 250 50 H V C CNN
+F1 "rectifier-bridge-1" 0 125 50 H I C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -115 55 -105 65 N
+P 2 0 1 0 -105 55 -115 65 N
+P 2 0 1 0 -70 -100 -40 -70 N
+P 2 0 1 0 -70 45 -100 75 N
+P 2 0 1 0 -35 -90 -25 -80 N
+P 2 0 1 0 -25 -90 -35 -80 N
+P 2 0 1 0 25 -90 35 -80 N
+P 2 0 1 0 35 -90 25 -80 N
+P 2 0 1 0 70 -100 40 -70 N
+P 2 0 1 0 70 45 100 75 N
+P 2 0 1 0 105 55 115 65 N
+P 2 0 1 0 115 55 105 65 N
+P 3 0 1 0 -80 65 -70 105 -55 90 N
+P 3 0 1 0 -60 -80 -70 -40 -85 -55 N
+P 3 0 1 0 60 -80 70 -40 85 -55 N
+P 3 0 1 0 80 65 70 105 55 90 N
+P 5 0 1 0 0 -140 140 0 0 140 -140 0 0 -140 N
+X ~ ae 0 -200 59 U 50 50 1 1 P
+X ~ b -200 0 59 R 50 50 1 1 P
+X ~ c 0 200 59 D 50 50 1 1 P
+X ~ d 200 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rectifier-bridge-2
+#
+DEF rectifier-bridge-2 MR 0 40 Y Y 1 F N
+F0 "MR" 0 100 50 H V C CNN
+F1 "rectifier-bridge-2" 0 125 50 H I C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+C 250 -50 5 0 1 0 N
+T 0 -200 -25 30 0 0 0 + Normal 0 C C
+T 0 -100 -25 30 0 0 0 + Normal 0 C C
+T 0 100 -25 30 0 0 0 + Normal 0 C C
+T 0 200 -25 30 0 0 0 + Normal 0 C C
+P 2 0 1 0 -250 0 -100 0 N
+P 2 0 1 0 -175 25 -175 -25 N
+P 2 0 1 0 -150 0 -150 0 N
+P 2 0 1 0 -100 0 0 0 N
+P 2 0 1 0 -100 50 -100 0 N
+P 2 0 1 0 -75 25 -75 -25 N
+P 2 0 1 0 0 0 0 -100 N
+P 2 0 1 0 0 0 100 0 N
+P 2 0 1 0 75 25 75 -25 N
+P 2 0 1 0 100 0 200 0 N
+P 2 0 1 0 100 50 100 0 N
+P 2 0 1 0 175 25 175 -25 N
+P 3 0 1 0 -250 0 -250 -50 250 -50 N
+P 3 0 1 0 -125 0 -125 25 -175 0 F
+P 3 0 1 0 -25 0 -25 25 -75 0 F
+P 3 0 1 0 25 0 25 25 75 0 F
+P 3 0 1 0 125 0 125 25 175 0 F
+P 3 0 1 0 200 0 250 0 250 -100 N
+X ~ a -300 0 59 R 50 50 1 1 P
+X ~ b -100 100 59 D 50 50 1 1 P
+X ~ c 0 -150 59 U 50 50 1 1 P
+X ~ d 100 100 59 D 50 50 1 1 P
+X ~ e 250 -150 59 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rectifier-four-unit
+#
+DEF rectifier-four-unit MR 0 40 Y Y 1 F N
+F0 "MR" 0 -100 50 H V C CNN
+F1 "rectifier-four-unit" 0 125 50 H I C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+T 0 -200 -25 30 0 0 0 + Normal 0 C C
+T 0 -100 -25 30 0 0 0 + Normal 0 C C
+T 0 100 -25 30 0 0 0 + Normal 0 C C
+T 0 200 -25 30 0 0 0 + Normal 0 C C
+P 2 0 1 0 -200 0 -100 0 N
+P 2 0 1 0 -175 25 -175 -25 N
+P 2 0 1 0 -150 0 -150 0 N
+P 2 0 1 0 -100 0 0 0 N
+P 2 0 1 0 -100 50 -100 0 N
+P 2 0 1 0 -75 25 -75 -25 N
+P 2 0 1 0 0 0 100 0 N
+P 2 0 1 0 0 50 0 0 N
+P 2 0 1 0 75 25 75 -25 N
+P 2 0 1 0 100 0 200 0 N
+P 2 0 1 0 100 50 100 0 N
+P 2 0 1 0 175 25 175 -25 N
+P 3 0 1 0 -125 0 -125 25 -175 0 F
+P 3 0 1 0 -25 0 -25 25 -75 0 F
+P 3 0 1 0 25 0 25 25 75 0 F
+P 3 0 1 0 125 0 125 25 175 0 F
+X ~ a -250 0 59 R 50 50 1 1 P
+X ~ b -100 100 59 D 50 50 1 1 P
+X ~ c 0 100 59 D 50 50 1 1 P
+X ~ d 100 100 59 D 50 50 1 1 P
+X ~ e 250 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # rectifier-symmetrical
 #
 DEF rectifier-symmetrical MR 0 40 Y Y 1 F N
@@ -489,6 +596,75 @@ P 2 0 1 0 0 25 0 -25 N
 P 4 0 1 0 -50 0 -50 25 50 -25 50 0 N
 X ~ a -100 0 59 R 50 50 1 1 P
 X ~ b 100 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rectifier-two-unit
+#
+DEF rectifier-two-unit MR 0 40 Y Y 1 F N
+F0 "MR" 0 -100 50 H V C CNN
+F1 "rectifier-two-unit" 0 125 50 H I C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+T 0 0 -25 30 0 0 0 + Normal 0 C C
+T 0 100 -25 30 0 0 0 + Normal 0 C C
+P 2 0 1 0 -100 0 0 0 N
+P 2 0 1 0 -25 25 -25 -25 N
+P 2 0 1 0 0 0 100 0 N
+P 2 0 1 0 0 50 0 0 N
+P 2 0 1 0 75 25 75 -25 N
+P 3 0 1 0 -75 0 -75 25 -25 0 F
+P 3 0 1 0 25 0 25 25 75 0 F
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 0 100 59 D 50 50 1 1 P
+X ~ c 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rectifier-two-unit-opposing1
+#
+DEF rectifier-two-unit-opposing1 MR 0 40 Y Y 1 F N
+F0 "MR" 0 -100 50 H V C CNN
+F1 "rectifier-two-unit-opposing1" 0 125 50 H I C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+T 0 0 -25 30 0 0 0 + Normal 0 C C
+T 0 0 -25 30 0 0 0 + Normal 0 C C
+P 2 0 1 0 -100 0 0 0 N
+P 2 0 1 0 -25 25 -25 -25 N
+P 2 0 1 0 0 50 0 0 N
+P 2 0 1 0 25 25 25 -25 N
+P 2 0 1 0 100 0 0 0 N
+P 3 0 1 0 -75 0 -75 25 -25 0 F
+P 3 0 1 0 75 0 75 25 25 0 F
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 0 100 59 D 50 50 1 1 P
+X ~ c 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rectifier-two-unit-opposing2
+#
+DEF rectifier-two-unit-opposing2 MR 0 40 Y Y 1 F N
+F0 "MR" 0 -100 50 H V C CNN
+F1 "rectifier-two-unit-opposing2" 0 125 50 H I C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+T 0 -100 -25 30 0 0 0 + Normal 0 C C
+T 0 100 -25 30 0 0 0 + Normal 0 C C
+P 2 0 1 0 -100 0 0 0 N
+P 2 0 1 0 -75 25 -75 -25 N
+P 2 0 1 0 0 0 100 0 N
+P 2 0 1 0 0 50 0 0 N
+P 2 0 1 0 75 25 75 -25 N
+P 3 0 1 0 -25 0 -25 25 -75 0 F
+P 3 0 1 0 25 0 25 25 75 0 F
+X ~ a -150 0 59 R 50 50 1 1 P
+X ~ b 0 100 59 D 50 50 1 1 P
+X ~ c 150 0 59 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
