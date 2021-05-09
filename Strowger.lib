@@ -2128,114 +2128,126 @@ ENDDEF
 # uniselector-small-50-bridging
 #
 DEF uniselector-small-50-bridging U 0 40 Y Y 1 F N
-F0 "U" 125 125 50 H V C CNN
+F0 "U" -200 90 50 H V C CNN
 F1 "uniselector-small-50-bridging" 0 300 50 H I C CNN
 F2 "" 0 300 50 H I C CNN
 F3 "" 0 300 50 H I C CNN
 DRAW
-C 0 -125 7 0 1 0 N
+C 0 -185 7 0 1 0 N
 C 0 0 10 0 1 0 N
-C 0 125 7 0 1 0 N
-C 0 125 7 0 1 0 N
-C 35 -105 7 0 1 0 N
-C 35 110 7 0 1 0 N
-C 65 -80 7 0 1 0 N
-C 65 85 7 0 1 0 N
-C 85 -50 7 0 1 0 N
-C 85 55 7 0 1 0 N
-C 95 -15 7 0 1 0 N
-C 95 20 7 0 1 0 N
-T 0 -25 100 20 0 0 0 0 Normal 0 C C
-T 0 -25 -100 20 0 0 0 50 Normal 0 C C
+C 0 185 7 0 1 0 N
+C 45 -170 7 0 1 0 N
+C 45 170 7 0 1 0 N
+C 85 -145 7 0 1 0 N
+C 85 145 7 0 1 0 N
+C 120 -110 7 0 1 0 N
+C 120 110 7 0 1 0 N
+C 140 -70 7 0 1 0 N
+C 140 70 7 0 1 0 N
+C 155 -25 7 0 1 0 N
+C 155 25 7 0 1 0 N
+T 0 -25 175 20 0 0 0 1 Normal 0 C C
+T 0 -25 -160 20 0 0 0 50 Normal 0 C C
 P 2 0 1 0 -40 0 -10 0 N
-P 4 0 1 0 -10 -10 -60 -80 -50 -90 -40 -80 N
-P 4 0 1 0 5 10 55 80 45 90 35 80 N
+P 2 0 1 0 160 20 200 0 N
+P 4 0 1 0 -10 -10 -85 -130 -75 -140 -65 -130 N
+P 4 0 1 0 10 5 85 125 75 135 65 125 N
 X ~ ~ -100 0 59 R 50 50 1 1 P
+X ~ ~ 300 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
 # uniselector-small-50-nonbridging
 #
 DEF uniselector-small-50-nonbridging U 0 40 Y Y 1 F N
-F0 "U" 125 125 50 H V C CNN
+F0 "U" -200 90 50 H V C CNN
 F1 "uniselector-small-50-nonbridging" 0 300 50 H I C CNN
 F2 "" 0 300 50 H I C CNN
 F3 "" 0 300 50 H I C CNN
 DRAW
-C 0 -125 7 0 1 0 N
+C 0 -185 7 0 1 0 N
 C 0 0 10 0 1 0 N
-C 0 125 7 0 1 0 N
-C 0 125 7 0 1 0 N
-C 35 -105 7 0 1 0 N
-C 35 110 7 0 1 0 N
-C 65 -80 7 0 1 0 N
-C 65 85 7 0 1 0 N
-C 85 -50 7 0 1 0 N
-C 85 55 7 0 1 0 N
-C 95 -15 7 0 1 0 N
-C 95 20 7 0 1 0 N
-T 0 -25 100 20 0 0 0 0 Normal 0 C C
-T 0 -25 -100 20 0 0 0 50 Normal 0 C C
+C 0 185 7 0 1 0 N
+C 45 -170 7 0 1 0 N
+C 45 170 7 0 1 0 N
+C 85 -145 7 0 1 0 N
+C 85 145 7 0 1 0 N
+C 120 -110 7 0 1 0 N
+C 120 110 7 0 1 0 N
+C 140 -70 7 0 1 0 N
+C 140 70 7 0 1 0 N
+C 155 -25 7 0 1 0 N
+C 155 25 7 0 1 0 N
+T 0 -25 175 20 0 0 0 1 Normal 0 C C
+T 0 -25 -160 20 0 0 0 50 Normal 0 C C
 P 2 0 1 0 -40 0 -10 0 N
-P 3 0 1 0 -10 -10 -55 -75 -50 -90 N
-P 3 0 1 0 5 10 50 75 45 90 N
+P 2 0 1 0 160 20 200 0 N
+P 3 0 1 0 -10 -10 -85 -130 -65 -135 N
+P 3 0 1 0 10 5 85 125 65 130 N
 X ~ ~ -100 0 59 R 50 50 1 1 P
+X ~ ~ 300 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
 # uniselector-small-bridging
 #
 DEF uniselector-small-bridging U 0 40 Y Y 1 F N
-F0 "U" 125 125 50 H V C CNN
+F0 "U" -200 90 50 H V C CNN
 F1 "uniselector-small-bridging" 0 300 50 H I C CNN
 F2 "" 0 300 50 H I C CNN
 F3 "" 0 300 50 H I C CNN
 DRAW
-C 0 -125 7 0 1 0 N
+C 0 -185 7 0 1 0 N
 C 0 0 10 0 1 0 N
-C 0 125 7 0 1 0 N
-C 0 125 7 0 1 0 N
-C 35 -105 7 0 1 0 N
-C 35 110 7 0 1 0 N
-C 65 -80 7 0 1 0 N
-C 65 85 7 0 1 0 N
-C 85 -50 7 0 1 0 N
-C 85 55 7 0 1 0 N
-C 95 -15 7 0 1 0 N
-C 95 20 7 0 1 0 N
-T 0 -25 100 20 0 0 0 0 Normal 0 C C
-T 0 -25 -100 20 0 0 0 24 Normal 0 C C
+C 0 185 7 0 1 0 N
+C 45 -170 7 0 1 0 N
+C 45 170 7 0 1 0 N
+C 85 -145 7 0 1 0 N
+C 85 145 7 0 1 0 N
+C 120 -110 7 0 1 0 N
+C 120 110 7 0 1 0 N
+C 140 -70 7 0 1 0 N
+C 140 70 7 0 1 0 N
+C 155 -25 7 0 1 0 N
+C 155 25 7 0 1 0 N
+T 0 -25 175 20 0 0 0 0 Normal 0 C C
+T 0 -25 -160 20 0 0 0 24 Normal 0 C C
 P 2 0 1 0 -40 0 -10 0 N
-P 4 0 1 0 5 10 55 80 45 90 35 80 N
+P 2 0 1 0 160 20 200 0 N
+P 4 0 1 0 10 5 85 125 75 135 65 125 N
 X ~ ~ -100 0 59 R 50 50 1 1 P
+X ~ ~ 300 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
 # uniselector-small-nonbridging
 #
 DEF uniselector-small-nonbridging U 0 40 Y Y 1 F N
-F0 "U" 125 125 50 H V C CNN
+F0 "U" -200 90 50 H V C CNN
 F1 "uniselector-small-nonbridging" 0 300 50 H I C CNN
 F2 "" 0 300 50 H I C CNN
 F3 "" 0 300 50 H I C CNN
 DRAW
-C 0 -125 7 0 1 0 N
+C 0 -185 7 0 1 0 N
 C 0 0 10 0 1 0 N
-C 0 125 7 0 1 0 N
-C 0 125 7 0 1 0 N
-C 35 -105 7 0 1 0 N
-C 35 110 7 0 1 0 N
-C 65 -80 7 0 1 0 N
-C 65 85 7 0 1 0 N
-C 85 -50 7 0 1 0 N
-C 85 55 7 0 1 0 N
-C 95 -15 7 0 1 0 N
-C 95 20 7 0 1 0 N
-T 0 -25 100 20 0 0 0 0 Normal 0 C C
-T 0 -25 -100 20 0 0 0 24 Normal 0 C C
+C 0 185 7 0 1 0 N
+C 45 -170 7 0 1 0 N
+C 45 170 7 0 1 0 N
+C 85 -145 7 0 1 0 N
+C 85 145 7 0 1 0 N
+C 120 -110 7 0 1 0 N
+C 120 110 7 0 1 0 N
+C 140 -70 7 0 1 0 N
+C 140 70 7 0 1 0 N
+C 155 -25 7 0 1 0 N
+C 155 25 7 0 1 0 N
+T 0 -25 175 20 0 0 0 0 Normal 0 C C
+T 0 -25 -160 20 0 0 0 24 Normal 0 C C
 P 2 0 1 0 -40 0 -10 0 N
-P 3 0 1 0 5 10 50 75 45 90 N
+P 2 0 1 0 160 20 200 0 N
+P 3 0 1 0 10 5 85 125 65 130 N
 X ~ ~ -100 0 59 R 50 50 1 1 P
+X ~ ~ 300 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
