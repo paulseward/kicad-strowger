@@ -4,35 +4,33 @@ EESchema-LIBRARY Version 2.4
 # battery-earth
 #
 DEF battery-earth ETH 0 0 N N 1 F P
-F0 "ETH" 100 100 50 H V L CNN
+F0 "ETH" 100 100 50 H I L CNN
 F1 "battery-earth" 100 35 50 H I L CNN
 F2 "" 0 55 50 V I C CNN
 F3 "" 0 55 50 V I C CNN
 DRAW
-P 2 0 1 0 0 30 0 0 N
 P 2 1 1 0 -50 30 50 30 N
 P 2 1 1 0 5 80 -5 80 N
 P 2 1 1 0 25 55 -25 55 N
-X - 2 0 -30 49 U 50 50 1 1 P
+X ~ ~ 0 -50 80 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
 # battery-neg
 #
 DEF battery-neg NEG 0 0 N N 1 F P
-F0 "NEG" 100 100 50 H V L CNN
+F0 "NEG" 100 100 50 H I L CNN
 F1 "battery-neg" 100 35 50 H I L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
 S -90 70 90 60 0 1 0 F
 S -62 47 58 27 0 1 0 F
-P 2 0 1 0 0 30 0 0 N
-P 2 0 1 0 0 70 0 100 N
-P 2 1 1 0 -50 105 50 105 N
-P 2 1 1 0 5 155 -5 155 N
-P 2 1 1 0 25 130 -25 130 N
-X - 2 0 -30 49 U 50 50 1 1 P
+P 2 0 1 0 0 70 0 155 N
+P 2 1 1 0 -50 155 50 155 N
+P 2 1 1 0 5 205 -5 205 N
+P 2 1 1 0 25 180 -25 180 N
+X ~ ~ 0 -50 80 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -189,7 +187,7 @@ ENDDEF
 #
 DEF contact-break U 0 40 Y Y 1 F N
 F0 "U" 100 -150 50 H V C CNN
-F1 "contact-break" 0 0 50 H V C CNN
+F1 "contact-break" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -205,7 +203,7 @@ ENDDEF
 #
 DEF contact-changeover-1 U 0 40 Y Y 1 F N
 F0 "U" 100 -150 50 H V C CNN
-F1 "contact-changeover-1" 0 0 50 H V C CNN
+F1 "contact-changeover-1" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -224,7 +222,7 @@ ENDDEF
 #
 DEF contact-changeover-2 U 0 40 Y Y 1 F N
 F0 "U" -50 -360 50 H V C CNN
-F1 "contact-changeover-2" 0 0 50 H V C CNN
+F1 "contact-changeover-2" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -242,7 +240,7 @@ ENDDEF
 #
 DEF contact-make-1 U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "contact-make-1" 0 0 50 H V C CNN
+F1 "contact-make-1" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -257,7 +255,7 @@ ENDDEF
 #
 DEF contact-make-1x U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "contact-make-1x" 0 0 50 H V C CNN
+F1 "contact-make-1x" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -273,7 +271,7 @@ ENDDEF
 #
 DEF contact-make-1y U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "contact-make-1y" 0 0 50 H V C CNN
+F1 "contact-make-1y" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -289,7 +287,7 @@ ENDDEF
 #
 DEF contact-make-2 U 0 40 Y Y 1 F N
 F0 "U" 100 -150 50 H V C CNN
-F1 "contact-make-2" 0 0 50 H V C CNN
+F1 "contact-make-2" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -304,7 +302,7 @@ ENDDEF
 #
 DEF contact-make-2x U 0 40 Y Y 1 F N
 F0 "U" 100 -150 50 H V C CNN
-F1 "contact-make-2x" 0 0 50 H V C CNN
+F1 "contact-make-2x" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -320,7 +318,7 @@ ENDDEF
 #
 DEF contact-make-2y U 0 40 Y Y 1 F N
 F0 "U" 100 -150 50 H V C CNN
-F1 "contact-make-2y" 0 0 50 H V C CNN
+F1 "contact-make-2y" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -336,7 +334,7 @@ ENDDEF
 #
 DEF contact-makebeforebreak U 0 40 Y Y 1 F N
 F0 "U" -50 -360 50 H V C CNN
-F1 "contact-makebeforebreak" 0 0 50 H V C CNN
+F1 "contact-makebeforebreak" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
