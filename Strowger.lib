@@ -2284,24 +2284,62 @@ X ~ ~ 300 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# uniselector-experiment
+# uniselector-small-template
 #
-DEF uniselector-small-experiment U 0 40 Y Y 1 F N
+DEF uniselector-small-template U 0 40 Y Y 1 F N
 F0 "U" -200 90 50 H V C CNN
-F1 "uniselector-small-experiment" 0 300 50 H I C CNN
+F1 "uniselector-small-template" 0 300 50 H I C CNN
 F2 "" 0 300 50 H I C CNN
 F3 "" 0 300 50 H I C CNN
 DRAW
 C 0 0 7 1 0 N
-C -148 -111 7 1 0 N
-C 165 -83 7 1 0 N
-C -56 -176 7 1 0 N
-C 157 97 7 1 0 N
-C -183 -24 7 1 0 N
-C -183 29 7 1 0 N
-C 102 155 7 1 0 N
-C -90 -162 7 1 0 N
-C 169 75 7 1 0 N
+C 0 200 7 1 0 N
+C 68 188 7 1 0 N
+C 129 153 7 1 0 N
+C 173 100 7 1 0 N
+C 197 35 7 1 0 N
+C 197 -35 7 1 0 N
+C 173 -100 7 1 0 N
+C 129 -153 7 1 0 N
+C 68 -188 7 1 0 N
+C 0 -200 7 1 0 N
+ENDDRAW
+ENDDEF
+#
+# uniselector-large-template
+#
+DEF uniselector-large-template U 0 40 Y Y 1 F N
+F0 "U" -200 90 50 H V C CNN
+F1 "uniselector-large-template" 0 300 50 H I C CNN
+F2 "" 0 300 50 H I C CNN
+F3 "" 0 300 50 H I C CNN
+DRAW
+C 0 0 7 1 0 N
+C 0 400 7 1 0 N
+C 52 397 7 1 0 N
+C 104 386 7 1 0 N
+C 153 370 7 1 0 N
+C 200 346 7 1 0 N
+C 244 317 7 1 0 N
+C 283 283 7 1 0 N
+C 317 244 7 1 0 N
+C 346 200 7 1 0 N
+C 370 153 7 1 0 N
+C 386 104 7 1 0 N
+C 397 52 7 1 0 N
+C 400 0 7 1 0 N
+C 397 -52 7 1 0 N
+C 386 -104 7 1 0 N
+C 370 -153 7 1 0 N
+C 346 -200 7 1 0 N
+C 317 -244 7 1 0 N
+C 283 -283 7 1 0 N
+C 244 -317 7 1 0 N
+C 200 -346 7 1 0 N
+C 153 -370 7 1 0 N
+C 104 -386 7 1 0 N
+C 52 -397 7 1 0 N
+C 0 -400 7 1 0 N
 ENDDRAW
 ENDDEF
 #End Library

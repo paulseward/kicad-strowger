@@ -2,24 +2,26 @@
 import math
 
 # Draw an arc of equally spaced circles
-arcRad=185
-pinRad=7
-pinCount=10
+arcRadius  = 400   # Radius of the arc to place the circles on
+arcDegrees = 180   # Number of degrees to spread the circles over
+arcOffset  = 0     # Angle to start from
 
-fill='0' # not filled
-# fill='f' # filled with bg colour
-#fill='F' # filled with pen colour
+pinRadius  = 7     # Radius of the circles
+pinCount   = 25    # How many circles to place
+pinFill    = '0'   # not filled
+# pinFill  = 'f'   # filled with bg colour
+# pinFill  = 'F'   # filled with pen colour
 
-# origin pin
-print("C 0 0 {} 1 0 N".format(pinRad))
+# Draw origin pin
+print("C 0 0 {} 1 0 N".format(pinRadius))
 
 # arc of pins
-for pin in range(1,pinCount):
-  angle = 180/float(pin)
-  X     = int(round(math.sin(angle)*arcRad))
-  Y     = int(round(math.cos(angle)*arcRad))
+for pin in range(0,pinCount):
+  angle = math.radians(arcOffset + (pin*arcDegrees/float(pinCount-1)))
+  X     = int(round(math.sin(angle)*arcRadius))
+  Y     = int(round(math.cos(angle)*arcRadius))
 
-  # Circles:
+  # Draw the circle:
   # C X Y radius part dmg pen fill
-  print("C {} {} {} 1 0 N".format(X,Y,pinRad))
+  print("C {} {} {} 1 0 N".format(X,Y,pinRadius))
 
