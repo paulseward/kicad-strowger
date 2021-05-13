@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python
 import math
 
 # Draw an arc of equally spaced circles
