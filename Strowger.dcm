@@ -1,3 +1,105 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP battery-earth
+F ~
+$ENDCMP
+#
+$CMP battery-neg
+F ~
+$ENDCMP
+#
+$CMP inductor
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP inductor-balanced
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP inductor-ironcore
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP jack-3-point-break-500
+D PO No 500
+$ENDCMP
+#
+$CMP jack-3-point-break-800
+D PO No 800
+$ENDCMP
+#
+$CMP jack-3-point-break-810
+D PO No 810
+$ENDCMP
+#
+$CMP jack-isolation
+D PO No 500
+$ENDCMP
+#
+$CMP jack-test-2000
+D PO No 500
+$ENDCMP
+#
+$CMP jack-test-2000-link
+D PO No 500
+$ENDCMP
+#
+$CMP jack-test-pre2000
+D PO No 500
+$ENDCMP
+#
+$CMP jack-test-pre2000-break
+D PO No 500
+$ENDCMP
+#
+$CMP jack-test-routine
+D PO No 500
+$ENDCMP
+#
+$CMP jack-test-routine-break
+D PO No 500
+$ENDCMP
+#
+$CMP jack-test-uniselector
+D PO No 500
+$ENDCMP
+#
+$CMP transformer-dustcore
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP transformer-ironcore
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP transformer-line
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP transformer-line-tone-coil
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP transformer-multitap
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP transformer-operatorsinductioncoil
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
+$CMP transformer-screened
+D FIXED IND 10UH 500MA 400 MOHM
+K 811-2473-1-ND 8200
+$ENDCMP
+#
 #End Doc Library
