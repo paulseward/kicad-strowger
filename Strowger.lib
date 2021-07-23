@@ -759,6 +759,42 @@ X ~ e 0 -150 100 U 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
+# plug-operators
+#
+DEF plug-operators U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "plug-operators" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 20 50 -250 0 -250 N
+P 2 0 1 20 50 -200 -50 -200 N
+P 2 0 1 20 50 -150 -100 -150 N
+P 2 0 1 20 50 -100 -150 -100 N
+X ~ ~ 150 -250 100 L 50 50 1 1 U
+X ~ ~ 150 -200 100 L 50 50 1 1 U
+X ~ ~ 150 -150 100 L 50 50 1 1 U
+X ~ ~ 150 -100 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# plug-switchboard
+#
+DEF plug-switchboard U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "plug-switchboard" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 20 50 -200 0 -200 N
+P 2 0 1 20 50 -150 -50 -150 N
+P 2 0 1 20 50 -100 -100 -100 N
+X ~ ~ 150 -200 100 L 50 50 1 1 U
+X ~ ~ 150 -150 100 L 50 50 1 1 U
+X ~ ~ 150 -100 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 # rectifier
 #
 DEF rectifier MR 0 40 Y Y 1 F N
